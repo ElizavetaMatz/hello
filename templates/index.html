@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Ваше имя
+{% endblock %}
+
+{% block body %}
+
+<form action="greet" method="POST">
+    <div class="mb-3">
+        <label class="form-label" for="nameInput">Введите имя</label>
+        <br>
+        <input type = text name="name" class="form-control" autocomplete="off"
+        autofocus placeholder="Ваше имя" id="nameInput">
+        <button type = "submit" class="btn btn-primary">Приветствовать</button>
+    </div>
+</form>
+{% endblock %}
